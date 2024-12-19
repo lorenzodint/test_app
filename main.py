@@ -46,11 +46,12 @@ html = """
             <script>
                 window.onload = function() {
                     console.log("CIAO");
-                    window.top.location.href = "https://lodi-test.streamlit.app/~/+/";
+                    window.top.location.href = "https://lorenzodintino.altervista.org/STREAMLIT.php";
+                    console.log("arrivato");
                 };
             </script>
             """
-# components.html(html, height=0)
+components.html(html, height=0)
 
 # st.markdown(
 #         f"""
