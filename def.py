@@ -21,7 +21,7 @@ js="""
          function fu() {
          var corrente = window.location.href;
          console.log(corrente);
-         document.getElementById("par").innerHTML = corrente;
+         window.location.href = "https://it.wikipedia.org/wiki/Associazione_sportiva_dilettantistica";
          }
          fu()
          </script>
