@@ -9,7 +9,7 @@ def style(url):
     response = requests.post(url)
     if response.status_code == 200:
         content = response.text
-        st.write(content)
+        st.write(content, unsafe_allow_html=True)
     else:
         st.write(f"errore: {response.status_code}")
 
