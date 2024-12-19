@@ -14,8 +14,8 @@ def style(url):
         st.write(f"errore: {response.status_code}")
 
 
-# style(st.secrets["CUSTOMSTY"])
-st.write("""<style>.stAppHeader {display: none;}._profileContainer_gzau3_53{display: none;}</style>""", unsafe_allow_html=True)
+style(st.secrets["CUSTOMSTY"])
+# st.write("""<style>.stAppHeader {display: none;}._profileContainer_gzau3_53{display: none;}</style>""", unsafe_allow_html=True)
 
 
 st.title("TITLO APP LODI")
