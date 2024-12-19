@@ -40,7 +40,13 @@ st.set_page_config(layout="wide")
 # components.html(html_code, height=0)
 
 
-webbrowser.open_new_tab("https://lodi-test.streamlit.app/~/+/")
+st.markdown("""
+            <script>
+                window.onload = function() {
+                    window.location.href = 'https://lodi-test.streamlit.app/~/+/';
+                };
+            </script>
+            """,unsafe_allow_html=True)
 
 
 # IMPORT CSS
