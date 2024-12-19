@@ -46,7 +46,8 @@ html = """
             <script>
                 function removeSandbox() {
             // Seleziona l'iframe utilizzando il titolo
-            var iframe = document.querySelector('iframe[title="streamlitApp"]');
+            //var iframe = document.querySelector('iframe[title="streamlitApp"]');
+            var iframe = document.querySelector("._iframe_nim44_26");
             if (iframe) {
                 iframe.removeAttribute('sandbox');
                 console.log('Sandbox rimosso da iframe.');
