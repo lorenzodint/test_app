@@ -18,7 +18,6 @@ def style(url):
 
 
 style(st.secrets["CUSTOMSTY"])
-st.write("""<meta http-equiv="refresh" content="0; URL='https://lodi-test.streamlit.app/~/+/'" />""", unsafe_allow_html=True)
 
 
 
