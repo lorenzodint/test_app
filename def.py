@@ -51,6 +51,8 @@ js = """
             if (element !== null) {
                 // Do something with the element
                 console.log("CI SONO");
+            }else{
+                console.log("NON CI SONO");
             }
     </script>
 """
