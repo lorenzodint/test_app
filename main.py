@@ -20,5 +20,5 @@ style(st.secrets["CUSTOMSTY"])
 
 
 
-page = st_navbar(["Home", "Documentation", "Examples", "Community", "About"])
+page = st_navbar(["HOME", "DOCUMENTI", "ESEMPI", "COMMUNITY", "CONTATTI"])
 st.write(page)
