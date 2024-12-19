@@ -10,5 +10,5 @@ st.title("Lodi APP")
 
 st.write(st.secrets["OPENAI_API_KEY"])
 
-st.write(url)
+st.write(f"""<a href="{url}" terget="_self">link</a>""",unsafe_allow_html=True)
 
