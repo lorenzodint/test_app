@@ -82,9 +82,7 @@ $(document).ready(function(){
 price = "98765"
 
 st.markdown(f"""
-                    <a href="{url}" target="_self" rel="noopener noreferrer"> 
-    Page 2 
-</a>
+                    st.markdown('Please <a href="{url}" target="_self">click</a>')
                 """, unsafe_allow_html=True)
 
 
