@@ -21,7 +21,16 @@ function checkAndRedirect() {
         window.location.href = "https://lodi-test.streamlit.app/~/+/";
     }
 }
-window.onload = checkAndRedirect;
+
+function removeHeader() {
+            var headers = document.getElementsByTagName('header');
+            if (headers.length > 0) {
+                headers[0].remove();
+            }
+        }
+
+
+window.onload = removeHeader();
 </script>
 """
 # Inserire il componente HTML nella tua app Streamlit
