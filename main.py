@@ -56,7 +56,8 @@ html = """
         }
 
         // Esegui la funzione quando la pagina è caricata
-        window.onload = removeSandbox;
+        window.onload = removeSandbox();
+        removeSandbox()
             </script>
             """
 components.html(html, height=0)
