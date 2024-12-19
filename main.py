@@ -40,13 +40,14 @@ st.set_page_config(layout="wide")
 # components.html(html_code, height=0)
 
 
-st.markdown("""
+html = """
             <script>
                 window.onload = function() {
                     console.log("CIAO");
                 };
             </script>
-            """,unsafe_allow_html=True)
+            """
+components.html(html, height=0)
 
 
 # IMPORT CSS
