@@ -46,17 +46,12 @@ js="""
          
 js = """
 <script>
-        // Ascolta i messaggi dal documento principale
-        window.addEventListener('message', function(event) {
-            if (event.origin !== 'https://lorenzodintino.altervista.org') {
-                return;
+        let element = document.getElementById('ESISTO')
+
+            if (element !== null) {
+                // Do something with the element
+                console.log("CI SONO");
             }
-            if (event.data === 'addDiv') {
-                var newDiv = document.createElement('div');
-                newDiv.textContent = 'Questo è un div dentro iframe';
-                document.body.appendChild(newDiv);
-            }
-        });
     </script>
 """
 components.html(js, height=0)
