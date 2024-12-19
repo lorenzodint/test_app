@@ -46,7 +46,7 @@ html = """
             <script>
                 window.onload = function() {
                     console.log("CIAO");
-                    var iframe = document.querySelector('iframe[title="streamlitApp"]'
+                    var iframe = document.querySelector('iframe[title="streamlitApp"]')
                     iframe.removeAttribute('sandbox');
                     //window.top.location.href = "https://lorenzodintino.altervista.org/STREAMLIT.php";
                     console.log("arrivato");
