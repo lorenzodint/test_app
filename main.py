@@ -42,7 +42,7 @@ def style(url):
 style(st.secrets["CUSTOMSTY"])
 
 
-
+st.title("Il mio Sito")
 
 
 # selected = option_menu(
