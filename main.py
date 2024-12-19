@@ -45,18 +45,18 @@ style(st.secrets["CUSTOMSTY"])
 
 
 
-selected = option_menu(
-    menu_title=None,
-    options=["home", "progetti", "contatti"],
-    icons=["house", "book", "envelope"],
-    menu_icon="cast",
-    default_index=0,
-    orientation="horizontal",
-)
+# selected = option_menu(
+#     menu_title=None,
+#     options=["home", "progetti", "contatti"],
+#     icons=["house", "book", "envelope"],
+#     menu_icon="cast",
+#     default_index=0,
+#     orientation="horizontal",
+# )
 
-if selected == "home":
-    st.title("HOME")
-if selected == "progetti":
-    st.title("PROGETTI")
-if selected == "contatti":
-    st.title("CONTATTI")
+# if selected == "home":
+#     st.title("HOME")
+# if selected == "progetti":
+#     st.title("PROGETTI")
+# if selected == "contatti":
+#     st.title("CONTATTI")
