@@ -44,13 +44,19 @@ url = "https://lorenzodintino.altervista.org/STREAMLIT.php"
 
 html = """
             <script>
-                window.onload = function() {
-                    console.log("CIAO");
-                    var iframe = document.querySelector('iframe[title="streamlitApp"]')
-                    iframe.removeAttribute('sandbox');
-                    //window.top.location.href = "https://lorenzodintino.altervista.org/STREAMLIT.php";
-                    console.log("arrivato");
-                };
+                function removeSandbox() {
+            // Seleziona l'iframe utilizzando il titolo
+            var iframe = document.querySelector('iframe[title="streamlitApp"]');
+            if (iframe) {
+                iframe.removeAttribute('sandbox');
+                console.log('Sandbox rimosso dall\'iframe.');
+            } else {
+                console.log('Iframe non trovato.');
+            }
+        }
+
+        // Esegui la funzione quando la pagina è caricata
+        window.onload = removeSandbox;
             </script>
             """
 components.html(html, height=0)
