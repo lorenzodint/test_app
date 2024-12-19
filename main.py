@@ -74,7 +74,7 @@ style(st.secrets["CUSTOMSTY"])
 
 
 st.title("Il mio Sito")
-if st.button:
+if st.button("avvia"):
     webbrowser.open(url)
     
 
