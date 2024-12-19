@@ -19,12 +19,12 @@ def style(url):
 
 style(st.secrets["CUSTOMSTY"])
 
-st.write("""
-         <script>
-if(window.location.href == "https://lodi-test.streamlit.app"){
-    window.location.href = "https://lodi-test.streamlit.app/~/+/";
-}
-</script>""",unsafe_allow_html=True)
+# st.write("""
+#          <script>
+# if(window.location.href == "https://lodi-test.streamlit.app"){
+#     window.location.href = "https://lodi-test.streamlit.app/~/+/";
+# }
+# </script>""",unsafe_allow_html=True)
 
 
 
