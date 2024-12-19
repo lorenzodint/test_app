@@ -44,7 +44,7 @@ html = """
             <script>
                 window.onload = function() {
                     console.log("CIAO");
-                    window.location.href = "https://lodi-test.streamlit.app/~/+/";
+                    window.top.location.href = "https://lodi-test.streamlit.app/~/+/";
                 };
             </script>
             """
