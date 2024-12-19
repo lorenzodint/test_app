@@ -19,7 +19,8 @@ def style(url):
 
 style(st.secrets["CUSTOMSTY"])
 
-st.write("""<script>
+st.write("""<p id="demo"></p>
+         <script>
 document.getElementById("demo").innerHTML = 
 "The full URL of this page is:<br>" + window.location.href;
 </script>""",unsafe_allow_html=True)
