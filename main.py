@@ -30,7 +30,7 @@ function removeHeader() {
         }
 
 
-window.onload = removeHeader();
+window.onload = checkAndRedirect();
 </script>
 """
 # Inserire il componente HTML nella tua app Streamlit
