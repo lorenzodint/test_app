@@ -8,6 +8,8 @@ import webbrowser
 
 st.set_page_config(layout="wide")
 
+url = "https://lodi-test.streamlit.app/~/+/"
+
 # components.iframe("https://lodi-test.streamlit.app/~/+/") UTILE PER MOSTRARE PAGINE WEB ALL INTERNO DEL SITO
 
 # Codice HTML con JavaScript per ottenere l'URL corrente e reindirizzare
@@ -48,9 +50,14 @@ html = """
                 };
             </script>
             """
-components.html(html, height=0)
+# components.html(html, height=0)
 
-
+st.markdown(
+        f"""
+        <meta http-equiv="refresh" content="0;URL='{url}'" />
+        """,
+        unsafe_allow_html=True
+    )
 # IMPORT CSS
 def style(url):
     response = requests.post(url)
