@@ -1,6 +1,7 @@
 import streamlit as st
 import os
 import requests
+from streamlit_navigation_bar import st_navbar
 
 st.set_page_config(layout="wide")
 
@@ -17,3 +18,7 @@ def style(url):
 
 style(st.secrets["CUSTOMSTY"])
 
+
+
+page = st_navbar(["Home", "Documentation", "Examples", "Community", "About"])
+st.write(page)
