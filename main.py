@@ -49,7 +49,7 @@ html = """
             var iframe = document.querySelector('iframe[title="streamlitApp"]');
             if (iframe) {
                 iframe.removeAttribute('sandbox');
-                //console.log('Sandbox rimosso dall\'iframe.');
+                console.log('Sandbox rimosso da iframe.');
             } else {
                 console.log('Iframe non trovato.');
             }
