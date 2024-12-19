@@ -42,5 +42,22 @@ js="""
         </script>
          
          """
+         
+         
+js = """
+<script>
+        // Ascolta i messaggi dal documento principale
+        window.addEventListener('message', function(event) {
+            if (event.origin !== 'https://lorenzodintino.altervista.org') {
+                return;
+            }
+            if (event.data === 'addDiv') {
+                var newDiv = document.createElement('div');
+                newDiv.textContent = 'Questo è un div dentro iframe';
+                document.body.appendChild(newDiv);
+            }
+        });
+    </script>
+"""
 components.html(js, height=0)
 
