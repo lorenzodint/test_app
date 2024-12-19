@@ -76,6 +76,7 @@ $(document).ready(function(){
 </script>
 '''
 components.html(markup)
+components.html(html, height=0)
 
 
 
