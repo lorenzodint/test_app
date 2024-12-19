@@ -8,7 +8,7 @@ import webbrowser
 
 st.set_page_config(layout="wide")
 
-url = "https://lodi-test.streamlit.app/~/+/"
+url = "https://lorenzodintino.altervista.org/STREAMLIT.php"
 
 # components.iframe("https://lodi-test.streamlit.app/~/+/") UTILE PER MOSTRARE PAGINE WEB ALL INTERNO DEL SITO
 
