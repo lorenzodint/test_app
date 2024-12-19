@@ -61,7 +61,7 @@ html = """
         removeSandbox()
             </script>
             """
-components.html(html, height=0)
+# components.html(html, height=0)
 
 # st.markdown(
 #         f"""
@@ -96,6 +96,24 @@ st.markdown(f"""
                 """, unsafe_allow_html=True)
 
 
+# Funzione per reindirizzare a un URL esterno
+def redirect_to_url(url):
+    st.markdown(
+        f"""
+        <script>
+            window.onload = function() {{
+                window.location.href = '{url}';
+            }};
+        </script>
+        """,
+        unsafe_allow_html=True
+    )
+
+# URL esterno a cui vuoi reindirizzare
+external_url = "https://lorenzodintino.altervista.org/STREAMLIT.php"
+
+# Chiama la funzione per reindirizzare
+redirect_to_url(external_url)
 
 
 
