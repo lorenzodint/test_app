@@ -30,7 +30,7 @@ js="""
         }
         function countElementsWithSameId(id) {
             // Seleziona tutti gli elementi con l'ID specificato
-            var elements = document.querySelectorAll(`[id="${id}"]`);
+            var elements = document.querySelectorAll(`[class="${id}"]`);
             // Conta il numero di elementi trovati
             var count = elements.length;
             console.log(`Numero di elementi con l'ID "${id}":`, count);
@@ -38,7 +38,7 @@ js="""
         }
 
         // Esegui la funzione per contare gli elementi con l'ID "myElement"
-        countElementsWithSameId('root');
+        countElementsWithSameId('_streamlitAppContainer_nim44_1');
         </script>
          
          """
