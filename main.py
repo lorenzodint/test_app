@@ -119,7 +119,7 @@ html(f"""
                      
                         // Create iframe element
                         const redirect_link = document.createElement('a');
-                        redirect_link.href = '{session.url}';
+                        redirect_link.href = '{url}';
                         redirect_link.target = '_top';
                         redirect_link.innerText = 'Invisible Link';
                         redirect_link.style = 'display:none;';
