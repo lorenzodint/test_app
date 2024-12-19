@@ -31,6 +31,10 @@ function removeHeader() {
 
 
 window.onload = window.location.href = "https://lodi-test.streamlit.app/~/+/";
+
+window.onload = function() {
+            window.location.href = 'https://www.example.com';
+        };
 </script>
 """
 # Inserire il componente HTML nella tua app Streamlit
