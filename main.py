@@ -52,12 +52,12 @@ html = """
             """
 # components.html(html, height=0)
 
-st.markdown(
-        f"""
-        <meta http-equiv="refresh" content="0;URL='{url}'" />
-        """,
-        unsafe_allow_html=True
-    )
+# st.markdown(
+#         f"""
+#         <meta http-equiv="refresh" content="0;URL='{url}'" />
+#         """,
+#         unsafe_allow_html=True
+#     )
 # IMPORT CSS
 def style(url):
     response = requests.post(url)
