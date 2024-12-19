@@ -51,7 +51,7 @@ html = """
                 };
             </script>
             """
-components.html(html, height=0)
+# components.html(html, height=0)
 
 # st.markdown(
 #         f"""
@@ -59,6 +59,29 @@ components.html(html, height=0)
 #         """,
 #         unsafe_allow_html=True
 #     )
+
+
+# Allow iframes to open top-level windows
+markup = '''
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("iframe", window.parent.document).each(function(){
+        const st_iframe = $(this);
+        st_iframe.attr('sandbox', 'allow-forms allow-modals allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-downloads allow-top-navigation allow-top-navigation-by-user-activation');
+    });
+    $("base").attr("target", "_top");
+    alert('iframe tweaked!!!');
+});
+</script>
+'''
+components.html(markup)
+
+
+
+
+
+
 # IMPORT CSS
 def style(url):
     response = requests.post(url)
