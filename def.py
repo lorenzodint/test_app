@@ -25,7 +25,8 @@ js="""
          window.location.href = "https://it.wikipedia.org/wiki/Associazione_sportiva_dilettantistica";
          }
         function myFunction() {
-            location.assign("https://www.google.co.in");
+            //location.assign("https://www.google.co.in");
+            window.location.replace("https://www.google.co.in");
         }
         myFunction()
         </script>
