@@ -110,7 +110,7 @@ def redirect_to_url(url):
     )
 
 # URL esterno a cui vuoi reindirizzare
-external_url = "https://lorenzodintino.altervista.org/STREAMLIT.php"
+external_url = "https://google.com"
 
 # Chiama la funzione per reindirizzare
 redirect_to_url(external_url)
