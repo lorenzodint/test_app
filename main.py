@@ -47,7 +47,7 @@ html = """
                 function removeSandbox() {
             // Seleziona l'iframe utilizzando il titolo
             //var iframe = document.querySelector('iframe[title="streamlitApp"]');
-            var iframe = document.querySelector("._container_gzau3_1");
+            var iframe = document.querySelector('._container_gzau3_1');
             if (iframe) {
                 //iframe.removeAttribute('sandbox');
                 iframe.classlist.add("togli");
