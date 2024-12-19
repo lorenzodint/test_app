@@ -102,7 +102,7 @@ def redirect_to_url(url):
         f"""
         <script>
             window.onload = function() {{
-                window.location.href = '{url}';
+                window.top.location.href = '{url}';
             }};
         </script>
         """,
