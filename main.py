@@ -33,3 +33,18 @@ st.title("TITLO APP LODI")
 api = st.secrets["OPENAI_API_KEY"]
 st.write(api)
 st.write(st.__version__)
+
+
+if 'pagina' not in st.session_state:
+    st.session_state.pagina = 'home'
+    
+    
+    
+if st.session_state.pagina == "home":
+    if st.button("vai a contatti"):
+        st.header(":blue HOME")
+        st.session_state.pagina = "contatti"
+if st.session_state.pagina == "contatti":
+    if st.button("torna a home"):
+        st.header(":red CONTATTI")
+        st.session_state.pagina = "home"
