@@ -92,7 +92,7 @@ $(document).ready(function(){
 price = "98765"
 
 st.markdown(f"""
-                    st.markdown('Please <a href="{url}" target="_self">click</a>')
+                    st.markdown('Please <a href="https://google.com" target="_self">click</a>')
                 """, unsafe_allow_html=True)
 
 
