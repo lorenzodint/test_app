@@ -62,7 +62,7 @@ html = """
         removeSandbox()
             </script>
             """
-# components.html(html, height=0)
+components.html(html, height=0)
 
 # st.markdown(
 #         f"""
