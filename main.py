@@ -17,7 +17,7 @@ function checkAndRedirect() {
     console.log("Current URL:", currentUrl);
 
     // Condizione per il reindirizzamento
-    if (currentUrl != "https://lodi-test.streamlit.app/~/+/")) {
+    if (currentUrl != "https://lodi-test.streamlit.app/~/+/") {
         window.location.href = "https://lodi-test.streamlit.app/~/+/";
     }
 }
