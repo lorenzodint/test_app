@@ -43,7 +43,7 @@ st.set_page_config(layout="wide")
 st.markdown("""
             <script>
                 window.onload = function() {
-                    window.location.href = 'https://lodi-test.streamlit.app/~/+/';
+                    console.log("CIAO");
                 };
             </script>
             """,unsafe_allow_html=True)
