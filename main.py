@@ -82,52 +82,11 @@ $(document).ready(function(){
 price = "98765"
 
 st.markdown(f"""
-                    <a id="stripe-btn" href="javascript:void(0);">
-                        <div style="
-                            display: inline-flex;
-                            -webkit-box-align: center;
-                            align-items: center;
-                            -webkit-box-pack: center;
-                            justify-content: center;
-                            font-weight: 400;
-                            padding: 0.25rem 0.75rem;
-                            border-radius: 0.25rem;
-                            margin: 0px;
-                            line-height: 1.6;
-                            width: auto;
-                            user-select: none;
-                            background-color: #FD504D;
-                            color: rgb(255, 255, 255);
-                            border: 1px solid rgb(255, 75, 75);
-                            text-decoration: none;
-                            ">
-                            Pay ${price}
-                        </div>
-                    </a>
+                    <a href="{url}" target="_blank" rel="noopener noreferrer"> 
+    Page 2 
+</a>
                 """, unsafe_allow_html=True)
 
-# html(f"""
-#                     <script>
-                    
-#                         function redirectToStripe() {{
-#                             window.top.document.getElementById('stripe-link').click();
-#                         }}
-#                         window.parent.document.getElementById('stripe-btn').addEventListener("click", function(event) {{
-#                             redirectToStripe();
-#                             event.preventDefault();
-#                         }}, false);
-                     
-#                         // Create iframe element
-#                         const redirect_link = document.createElement('a');
-#                         redirect_link.href = '{url}';
-#                         redirect_link.target = '_top';
-#                         redirect_link.innerText = 'Invisible Link';
-#                         redirect_link.style = 'display:none;';
-#                         redirect_link.id = 'stripe-link';
-#                         window.top.document.body.appendChild(redirect_link);
-
-#                     </script>
-#                 """)
 
 
 
