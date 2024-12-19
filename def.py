@@ -15,6 +15,7 @@ st.write(f"""<a href="{url}" terget="_self">link</a>""",unsafe_allow_html=True)
 st.write(f"""
          <script>
          var corrente = window.location.href;
+         console.log(corrente);
          document.getElementById("par").innerHTML = corrente;
          </script>
          <p id="par"></p>
