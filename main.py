@@ -74,6 +74,9 @@ style(st.secrets["CUSTOMSTY"])
 
 
 st.title("Il mio Sito")
+if st.button:
+    webbrowser.open(url)
+    
 
 
 # selected = option_menu(
