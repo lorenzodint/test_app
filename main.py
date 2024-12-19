@@ -106,28 +106,28 @@ st.markdown(f"""
                     </a>
                 """, unsafe_allow_html=True)
 
-html(f"""
-                    <script>
+# html(f"""
+#                     <script>
                     
-                        function redirectToStripe() {{
-                            window.top.document.getElementById('stripe-link').click();
-                        }}
-                        window.parent.document.getElementById('stripe-btn').addEventListener("click", function(event) {{
-                            redirectToStripe();
-                            event.preventDefault();
-                        }}, false);
+#                         function redirectToStripe() {{
+#                             window.top.document.getElementById('stripe-link').click();
+#                         }}
+#                         window.parent.document.getElementById('stripe-btn').addEventListener("click", function(event) {{
+#                             redirectToStripe();
+#                             event.preventDefault();
+#                         }}, false);
                      
-                        // Create iframe element
-                        const redirect_link = document.createElement('a');
-                        redirect_link.href = '{url}';
-                        redirect_link.target = '_top';
-                        redirect_link.innerText = 'Invisible Link';
-                        redirect_link.style = 'display:none;';
-                        redirect_link.id = 'stripe-link';
-                        window.top.document.body.appendChild(redirect_link);
+#                         // Create iframe element
+#                         const redirect_link = document.createElement('a');
+#                         redirect_link.href = '{url}';
+#                         redirect_link.target = '_top';
+#                         redirect_link.innerText = 'Invisible Link';
+#                         redirect_link.style = 'display:none;';
+#                         redirect_link.id = 'stripe-link';
+#                         window.top.document.body.appendChild(redirect_link);
 
-                    </script>
-                """)
+#                     </script>
+#                 """)
 
 
 
