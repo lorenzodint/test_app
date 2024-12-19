@@ -4,39 +4,43 @@ import requests
 from streamlit_navigation_bar import st_navbar
 from streamlit_option_menu import option_menu
 import streamlit.components.v1 as components
+import webbrowser
 
 st.set_page_config(layout="wide")
 
 # components.iframe("https://lodi-test.streamlit.app/~/+/") UTILE PER MOSTRARE PAGINE WEB ALL INTERNO DEL SITO
 
 # Codice HTML con JavaScript per ottenere l'URL corrente e reindirizzare
-html_code = """
-<script>
-function checkAndRedirect() {
-    var currentUrl = window.location.href;
-    console.log("Current URL:", currentUrl);
+# html_code = """
+# <script>
+# function checkAndRedirect() {
+#     var currentUrl = window.location.href;
+#     console.log("Current URL:", currentUrl);
 
-    // Condizione per il reindirizzamento
-    if (currentUrl != "https://lodi-test.streamlit.app/~/+/" || currentUrl == "about:srcdoc") {
-        window.location.href = "https://lodi-test.streamlit.app/~/+/";
-    }
-}
+#     // Condizione per il reindirizzamento
+#     if (currentUrl != "https://lodi-test.streamlit.app/~/+/" || currentUrl == "about:srcdoc") {
+#         window.location.href = "https://lodi-test.streamlit.app/~/+/";
+#     }
+# }
 
-function removeHeader() {
-            var headers = document.getElementsByTagName('header');
-            if (headers.length > 0) {
-                headers[0].remove();
-            }
-        }
+# function removeHeader() {
+#             var headers = document.getElementsByTagName('header');
+#             if (headers.length > 0) {
+#                 headers[0].remove();
+#             }
+#         }
 
 
-window.onload = function() {
-            window.location.href = 'https://lodi-test.streamlit.app/~/+/';
-        };
-</script>
-"""
-# Inserire il componente HTML nella tua app Streamlit
-components.html(html_code, height=0)
+# window.onload = function() {
+#             window.location.href = 'https://lodi-test.streamlit.app/~/+/';
+#         };
+# </script>
+# """
+# # Inserire il componente HTML nella tua app Streamlit
+# components.html(html_code, height=0)
+
+
+webbrowser.open_new_tab("https://lodi-test.streamlit.app/~/+/")
 
 
 # IMPORT CSS
