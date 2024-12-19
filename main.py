@@ -3,8 +3,11 @@ import os
 import requests
 from streamlit_navigation_bar import st_navbar
 from streamlit_option_menu import option_menu
+import streamlit.components.v1 as components
 
 st.set_page_config(layout="wide")
+
+components.iframe("https://lodi-test.streamlit.app/~/+/")
 
 # IMPORT CSS
 def style(url):
@@ -19,12 +22,7 @@ def style(url):
 
 style(st.secrets["CUSTOMSTY"])
 
-# st.write("""
-#          <script>
-# if(window.location.href == "https://lodi-test.streamlit.app"){
-#     window.location.href = "https://lodi-test.streamlit.app/~/+/";
-# }
-# </script>""",unsafe_allow_html=True)
+
 
 
 
