@@ -13,6 +13,9 @@ st.write(st.secrets["OPENAI_API_KEY"])
 
 st.write(f"""<a href="{url}" terget="_self">link</a>""",unsafe_allow_html=True)
 
+
+
+st.write("""<p id="par"></p>""", unsafe_allow_html=True)
 js="""
          <script>
          function fu() {
@@ -22,7 +25,7 @@ js="""
          }
          fu()
          </script>
-         <p id="par"></p>
+         
          """
 components.html(js, height=0)
 
