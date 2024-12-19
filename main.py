@@ -18,6 +18,11 @@ def style(url):
 style(st.secrets["CUSTOMSTY"])
 
 
+st.write("""
+         <div class="mioFooter">FOOTER</div>
+         """, unsafe_allow_html=True)
+
+
 
 st.title("TITLO APP LODI")
 
