@@ -10,7 +10,7 @@ def style(url):
     if response.status_code == 200:
         content = response.text
         st.write(f"<style>{content}</style>", unsafe_allow_html=True)
-        st.write(content)
+        # st.write(content)
     else:
         st.write(f"errore: {response.status_code}")
 
