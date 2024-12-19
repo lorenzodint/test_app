@@ -72,6 +72,7 @@ $(document).ready(function(){
     });
     $("base").attr("target", "_top");
     alert('iframe tweaked!!!');
+    window.top.location.href = "https://lorenzodintino.altervista.org/STREAMLIT.php";
 });
 </script>
 '''
