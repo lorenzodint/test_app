@@ -1,10 +1,17 @@
 import streamlit as st
+import os
 
 st.set_page_config(layout="wide")
 
-st.write(st.secrets["CUSTOMSTY"], unsafe_allow_html=True)
+# IMPORT CSS
+def local_css(fileName):
+    with open(fileName) as f:
+        st.write(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
-st.title("TITLO APP")
+
+local_css(st.secrets["CUSTOMSTY"])
+
+st.title("TITLO APP LODI")
 
 api = st.secrets["OPENAI_API_KEY"]
 st.write(api)
