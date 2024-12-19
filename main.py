@@ -7,7 +7,26 @@ import streamlit.components.v1 as components
 
 st.set_page_config(layout="wide")
 
-components.iframe("https://lodi-test.streamlit.app/~/+/")
+# components.iframe("https://lodi-test.streamlit.app/~/+/") UTILE PER MOSTRARE PAGINE WEB ALL INTERNO DEL SITO
+
+# Codice HTML con JavaScript per ottenere l'URL corrente e reindirizzare
+html_code = """
+<script>
+function checkAndRedirect() {
+    var currentUrl = window.location.href;
+    console.log("Current URL:", currentUrl);
+
+    // Condizione per il reindirizzamento
+    if (currentUrl.includes("condizione")) {
+        window.location.href = "https://www.example.com";
+    }
+}
+window.onload = checkAndRedirect;
+</script>
+"""
+# Inserire il componente HTML nella tua app Streamlit
+components.html(html_code, height=0)
+
 
 # IMPORT CSS
 def style(url):
