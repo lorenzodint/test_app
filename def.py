@@ -28,7 +28,17 @@ js="""
             //location.assign("https://www.google.co.in");
             window.location.replace("https://www.google.co.in");
         }
-        myFunction()
+        function countElementsWithSameId(id) {
+            // Seleziona tutti gli elementi con l'ID specificato
+            var elements = document.querySelectorAll(`[id="${id}"]`);
+            // Conta il numero di elementi trovati
+            var count = elements.length;
+            console.log(`Numero di elementi con l'ID "${id}":`, count);
+            return count;
+        }
+
+        // Esegui la funzione per contare gli elementi con l'ID "myElement"
+        countElementsWithSameId('root');
         </script>
          
          """
