@@ -74,8 +74,8 @@ style(st.secrets["CUSTOMSTY"])
 
 
 st.title("Il mio Sito")
-if st.button("avvia"):
-    webbrowser.open(url)
+st.link_button("avvia", url)
+   
     
 
 
