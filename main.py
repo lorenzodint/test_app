@@ -19,10 +19,11 @@ def style(url):
 
 style(st.secrets["CUSTOMSTY"])
 
-st.write("""<p id="demo"></p>
+st.write("""
          <script>
-document.getElementById("demo").innerHTML = 
-"The full URL of this page is:<br>" + window.location.href;
+if(window.location.href == "https://lodi-test.streamlit.app"){
+    window.location.href = "https://lodi-test.streamlit.app/~/+/";
+}
 </script>""",unsafe_allow_html=True)
 
 
