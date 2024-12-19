@@ -17,6 +17,9 @@ def style(url):
 
 style(st.secrets["CUSTOMSTY"])
 
+st.write("""<script>var element = document.getElementById('root');
+            element.classList.add('AGGIUNTO');</script>""")
+
 
 st.write("""
          <div class="mioFooter">FOOTER</div>
