@@ -46,4 +46,8 @@ components.html(js, height=0)
 # namespace['scrivi']("ciao")
 
 modules["functions"]["scrivi"]("ciao")
-modules["fu"]["saluta"]()
+
+
+
+if st.button("bottone"):
+    modules["fu"]["saluta"]()
