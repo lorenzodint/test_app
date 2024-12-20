@@ -45,15 +45,18 @@ js="""
          
          
 js = """
-<script>
-        let element = document.getElementById('ESISTO')
-
-            if (element !== null) {
-                // Do something with the element
-                console.log("CI SONO");
-            }else{
-                console.log("NON CI SONO");
+ <script>
+        // Ascolta i messaggi dal documento principale
+        window.addEventListener('message', function(event) {
+            if (event.origin !== 'https://lorenzodintino.altervista.org/STREAMLIT.php') {
+                return;
             }
+            if (event.data === 'addDiv') {
+                var newDiv = document.createElement('div');
+                newDiv.textContent = 'Questo è un div in IFRAME';
+                document.body.appendChild(newDiv);
+            }
+        });
     </script>
 """
 components.html(js, height=0)
