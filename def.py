@@ -1,5 +1,5 @@
 
-import src.functions
+# import src.functions
 import sys
 import importlib.util
 import requests
@@ -45,5 +45,5 @@ components.html(js, height=0)
 
 # namespace['scrivi']("ciao")
 
-modules["functions"]["scrivi"]()
+modules["functions"]["scrivi"]("ciao")
 modules["fu"]["saluta"]()
