@@ -38,9 +38,9 @@ st.title("App")
 
 # st.write(st.secrets["OPENAI_API_KEY"])
 
-js = """
+# js = """
     
-    """
+#     """
 # components.html(js, height=0)
 
 
@@ -53,10 +53,10 @@ js = """
 #     modules["fu"]["saluta"]()
     
 ###################################################################
-if "page" not in st.session_state:
-    st.session_state.page = "login"
-if "chiLoggato" not in st.session_state:
-    st.session_state.chiLoggato = "0"
+# if "page" not in st.session_state:
+#     st.session_state.page = "login"
+# if "chiLoggato" not in st.session_state:
+#     st.session_state.chiLoggato = "0"
     
     
 
