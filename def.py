@@ -1,18 +1,19 @@
-
-# import src.functions
+import src.functions
+###################################################################################################
 import sys
 import importlib.util
 import requests
 import streamlit.components.v1 as components
 import streamlit as st
-print("sono main")
-# import src.functions as func
+
+
 
 st.set_page_config(layout="wide")
 
 files = [
     st.secrets['FUNZIONI'],
     st.secrets['FU'],
+    st.secrets['HOME'],
 ]
 
 modules = {}
@@ -30,24 +31,37 @@ for file in files:
     
     
     
-# exec(response.text, namespace)
 
-url = "https://lodi-def.streamlit.app/~/+/"
 
-st.title("Lodi APP")
 
-st.write(st.secrets["OPENAI_API_KEY"])
+st.title("App")
+
+# st.write(st.secrets["OPENAI_API_KEY"])
 
 js = """
     
     """
-components.html(js, height=0)
-
-# namespace['scrivi']("ciao")
-
-modules["functions"]["scrivi"]("ciao")
+# components.html(js, height=0)
 
 
 
-if st.button("bottone"):
-    modules["fu"]["saluta"]()
+# modules["functions"]["scrivi"]("ciao")
+
+
+
+# if st.button("bottone"):
+#     modules["fu"]["saluta"]()
+    
+###################################################################
+if "page" not in st.session_state:
+    st.session_state.page = "login"
+if "chiLoggato" not in st.session_state:
+    st.session_state.chiLoggato = "0"
+    
+    
+
+modules['home']['mostra']()
+
+
+    
+# st.write(st.session_state)
